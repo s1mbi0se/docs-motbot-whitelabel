@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../../about/todo/">
       
-        <link rel="next" href="about/ready/">
+      
+        <link rel="next" href="../new_host/first_step/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
     
     
       
-        <title>Whitelabel Motbot</title>
+        <title>Estrutura - Whitelabel Motbot</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/mermaid@8.5.1/dist/mermaid.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nessa-documentacao-discorreremos-sobre-o-que-ha-no-projeto-atualmente-e-os-proximos-passos-de-desenvolvimento" class="md-skip">
+        <a href="#models-e-migracoes" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Whitelabel Motbot" class="md-header__button md-logo" aria-label="Whitelabel Motbot" data-md-component="logo">
+    <a href="../.." title="Whitelabel Motbot" class="md-header__button md-logo" aria-label="Whitelabel Motbot" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Estrutura
             
           </span>
         </div>
@@ -211,7 +213,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Whitelabel Motbot" class="md-nav__button md-logo" aria-label="Whitelabel Motbot" data-md-component="logo">
+    <a href="../.." title="Whitelabel Motbot" class="md-nav__button md-logo" aria-label="Whitelabel Motbot" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -226,28 +228,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -256,48 +240,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nessa-documentacao-discorreremos-sobre-o-que-ha-no-projeto-atualmente-e-os-proximos-passos-de-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nessa documentação discorreremos sobre o que há no projeto atualmente e os próximos passos de desenvolvimento.
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nessa documentação discorreremos sobre o que há no projeto atualmente e os próximos passos de desenvolvimento.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#o-projeto-atualmente-se-encontra-em-fases-de-testes-onde-temos-um-servico-de-backend-compartilhado-que-faz-a-distribuicao-de-requisicoes-de-acordo-com-a-origem-da-chamada" class="md-nav__link">
-    <span class="md-ellipsis">
-      O projeto atualmente se encontra em fases de testes, onde temos um serviço de backend compartilhado que faz a distribuição de requisições de acordo com a origem da chamada.
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/ready/" class="md-nav__link">
+      <a href="../../about/ready/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -367,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/todo/" class="md-nav__link">
+      <a href="../../about/todo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -392,19 +334,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -418,7 +362,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Migrações
@@ -429,10 +373,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="migrations/migrations/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Estrutura
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -441,6 +405,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#para-tudo-funcionar-bem-por-aqui-temos-uma-restricao-baseada-no-host-que-define-para-onde-vai-cada-coisa-sendo-assim-precisamos-entender-um-pouco-melhor-como-tudo-esta-organizado-e-como-adicionar-um-novo-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para tudo funcionar bem, por aqui temos uma restrição baseada no Host, que define para onde vai cada coisa, sendo assim, precisamos entender um pouco melhor como tudo está organizado, e como adicionar um novo cliente.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-nosso-diagrama-de-dados-se-comporta-da-seguinte-maneira" class="md-nav__link">
+    <span class="md-ellipsis">
+      O nosso diagrama de dados se comporta da seguinte maneira:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-criacao-de-novos-hosts-devem-passar-pelas-seguintes-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      A criação de novos hosts devem passar pelas seguintes etapas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -490,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="migrations/new_host/first_step/" class="md-nav__link">
+      <a href="../new_host/first_step/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="migrations/new_host/second_step/" class="md-nav__link">
+      <a href="../new_host/second_step/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="migrations/new_host/final_step/" class="md-nav__link">
+      <a href="../new_host/final_step/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,6 +591,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -588,26 +601,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nessa-documentacao-discorreremos-sobre-o-que-ha-no-projeto-atualmente-e-os-proximos-passos-de-desenvolvimento" class="md-nav__link">
+  <a href="#para-tudo-funcionar-bem-por-aqui-temos-uma-restricao-baseada-no-host-que-define-para-onde-vai-cada-coisa-sendo-assim-precisamos-entender-um-pouco-melhor-como-tudo-esta-organizado-e-como-adicionar-um-novo-cliente" class="md-nav__link">
     <span class="md-ellipsis">
-      Nessa documentação discorreremos sobre o que há no projeto atualmente e os próximos passos de desenvolvimento.
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nessa documentação discorreremos sobre o que há no projeto atualmente e os próximos passos de desenvolvimento.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#o-projeto-atualmente-se-encontra-em-fases-de-testes-onde-temos-um-servico-de-backend-compartilhado-que-faz-a-distribuicao-de-requisicoes-de-acordo-com-a-origem-da-chamada" class="md-nav__link">
-    <span class="md-ellipsis">
-      O projeto atualmente se encontra em fases de testes, onde temos um serviço de backend compartilhado que faz a distribuição de requisições de acordo com a origem da chamada.
+      Para tudo funcionar bem, por aqui temos uma restrição baseada no Host, que define para onde vai cada coisa, sendo assim, precisamos entender um pouco melhor como tudo está organizado, e como adicionar um novo cliente.
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#o-nosso-diagrama-de-dados-se-comporta-da-seguinte-maneira" class="md-nav__link">
+    <span class="md-ellipsis">
+      O nosso diagrama de dados se comporta da seguinte maneira:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-criacao-de-novos-hosts-devem-passar-pelas-seguintes-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      A criação de novos hosts devem passar pelas seguintes etapas
+    </span>
+  </a>
   
 </li>
       
@@ -626,14 +642,28 @@
                   
 
 
-<h1 style="text-align: center">Documentação Whitelabel</h1>
-
+<h1 id="models-e-migracoes"><strong>Models e Migrações</strong></h1>
+<h3 id="para-tudo-funcionar-bem-por-aqui-temos-uma-restricao-baseada-no-host-que-define-para-onde-vai-cada-coisa-sendo-assim-precisamos-entender-um-pouco-melhor-como-tudo-esta-organizado-e-como-adicionar-um-novo-cliente">Para tudo funcionar bem, por aqui temos uma restrição baseada no Host, que define para onde vai cada coisa, sendo assim, precisamos entender um pouco melhor como tudo está organizado, e como adicionar um novo cliente.</h3>
+<h3 id="o-nosso-diagrama-de-dados-se-comporta-da-seguinte-maneira"><strong>O nosso diagrama de dados se comporta da seguinte maneira:</strong></h3>
 <div style="text-align: center;">
-    <img alt="Image" src="https://motbot.com.br/assets/theme-in9/images/atleta-motbot-1-3c7aed9f48f15b2765d1af38ae2db71dd56e316d0325b5972ddd20bc0b674b44.png"/>
+<div class="mermaid">flowchart TD
+    A[DATABASE]--&gt;B(COMMON_DATABASE)
+    A[DATABASE]--&gt;C(TENANT_SCHEMAS)
+    B --&gt; Z(TENANTS CONTROL) -- CLIENTS REGISTERS --&gt;0(Name, Host, Schema)
+    C --&gt; 99{MIDDLEWARE REDIRECT}
+    99 --&gt; D[Tenant 1]
+    99 --&gt; E[Tenant 2]
+    D -- APP CONTROL --&gt; 1(Configs, Payments, Permissions, Projects, Users)
+    E -- APP CONTROL --&gt; 3(Configs, Payments, Permissions, Projects, Users)</div>
 </div>
 
-<h2 id="nessa-documentacao-discorreremos-sobre-o-que-ha-no-projeto-atualmente-e-os-proximos-passos-de-desenvolvimento">Nessa documentação discorreremos sobre o que há no projeto atualmente e os próximos passos de desenvolvimento.</h2>
-<h3 id="o-projeto-atualmente-se-encontra-em-fases-de-testes-onde-temos-um-servico-de-backend-compartilhado-que-faz-a-distribuicao-de-requisicoes-de-acordo-com-a-origem-da-chamada">O projeto atualmente se encontra em fases de testes, onde temos um serviço de backend compartilhado que faz a distribuição de requisições de acordo com a origem da chamada.</h3>
+<h2 id="a-criacao-de-novos-hosts-devem-passar-pelas-seguintes-etapas">A criação de novos hosts devem passar pelas seguintes etapas</h2>
+<ol>
+<li>Criação de um novo <strong>Schema</strong> dentro do banco de dados</li>
+<li>Registro do <strong>Schema</strong> dentro de <strong>Tenants Control</strong>, adicionando ao cliente um Nome e um Host</li>
+<li>Migração do novo Tenant para criação das tabelas e definição dos valores padrão</li>
+</ol>
+<p>Quer criar um novo cliente? <a href="../new_host/first_step/">Clique Aqui</a> para ver os passos.</p>
 
 
 
@@ -685,10 +715,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js"></script>
       
