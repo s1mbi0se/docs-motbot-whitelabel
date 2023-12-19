@@ -1,0 +1,57 @@
+site_name: Whitelabel Motbot
+theme:
+  name: 'material'
+  logo: 'https://motbot-production.s3-sa-east-1.amazonaws.com/system_configurations/favicon/000/000/001/sizes192x192/favicon.png?1651637119'
+  favicon: 'https://motbot-production.s3-sa-east-1.amazonaws.com/system_configurations/favicon/000/000/001/sizes57x57/favicon.png?1651637119'
+  features:
+    - content.code.copy
+    - content.code.select
+  palette:
+    - scheme: default
+      primary: red
+      toggle:
+        icon: material/weather-night
+        name: Dark Mode
+    - scheme: slate
+      primary: red
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode
+
+markdown_extensions:
+  - pymdownx.tasklist  # Lista de tarefas
+  - pymdownx.emoji  # Emojis
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+
+
+extra_css:
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js
+
+
+nav:
+  - Home: 'index.md'
+  - Nossa Jornada:
+      - O que temos?: 'about/ready.md'
+      - O que falta?: 'about/todo.md'
+  - Migrações:
+      - Estrutura: 'migrations/migrations.md'
+      - Criando novo host:
+        - Passo 1: 'migrations/new_host/first_step.md'
+        - Passo 2: 'migrations/new_host/second_step.md'
+        - Final: 'migrations/new_host/final_step.md'
